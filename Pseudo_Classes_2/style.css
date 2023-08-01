@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.parent {
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    padding: 90px 0;
+}
+
+.item {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    margin: 20px 0;
+}
+
+
+/* A cada 2 elementos aplique o estilo */
+
+.parent div:nth-last-of-type(2n + 1) div.item {
+    background-color: brown;
+}
+
+.parent div:last-of-type div.item {
+    background-color: purple !important;
+}
