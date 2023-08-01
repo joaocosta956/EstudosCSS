@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: inside;
+}
+
+/* De acordo com o tipo */
+
+ul li:nth-of-type(2) {
+    color: red;
+}
+
+
+/* De acordo com o filho da ul */
+
+ul li:nth-child(4) {
+    color: green;
+}
+
+.box {
+    width: 100%;
+}
+
+.item {
+    box-sizing: border-box;
+    float: left;
+    width: 33.3%;
+    height: 400px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+/* Quando o mouse está pressionado */
+
+.one:active {
+    background-color: black;
+}
+
+/* Ao passar o mouse */
+
+.two:hover {
+    background-color: blue;
+}
+
+/* Ultimo elemento do tipo div */
+
+.box div:last-of-type {
+    background-color: green;
+}
+
+/* Ultimo elementodo tipo div mas atacando o p */
+
+.box div:last-of-type p {
+    color: white;
+}
+
+/* Todas divs que NÃO tenham a classe .one */
+
+.box div:not(.one) {
+    text-align: center;
+}
